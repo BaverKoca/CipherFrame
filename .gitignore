@@ -1,4 +1,6 @@
 .venv
-_pycache__
+__pycache__
 cipher_frame.db
 .env
+encrypted_images
+encrypted_image
