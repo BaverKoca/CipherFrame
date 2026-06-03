@@ -1,0 +1,4 @@
+.venv
+_pycache__
+cipher_frame.db
+.env

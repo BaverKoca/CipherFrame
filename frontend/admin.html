@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cipher Frame sysadmin dashboard.">
+  <title>Cipher Frame | Sysadmin Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="app-body">
+  <header class="app-header panel">
+    <div>
+      <p class="eyebrow">Cipher Frame Sysadmin</p>
+      <h1>Operations Control Center</h1>
+      <p class="lede">Signed in as <strong id="admin-username">Loading...</strong></p>
+    </div>
+    <div class="header-actions">
+      <button id="back-to-chat" class="secondary-action" type="button">Back to Chat</button>
+      <button id="refresh-admin" class="secondary-action" type="button">Refresh Dashboard</button>
+      <button id="admin-logout" class="secondary-action danger" type="button">Logout</button>
+    </div>
+  </header>
+
+  <main class="admin-shell">
+    <section class="panel admin-section">
+      <div class="section-header">
+        <h2>Overview</h2>
+        <span class="status-pill neutral">Live metrics</span>
+      </div>
+      <div id="overview-grid" class="overview-grid"></div>
+    </section>
+
+    <section class="panel admin-section">
+      <div class="section-header">
+        <h2>Users</h2>
+      </div>
+      <div class="table-wrap compact-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Username</th><th>Email</th><th>Role</th><th>Active</th><th>Last Login</th><th>Actions</th></tr>
+          </thead>
+          <tbody id="admin-users-table"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel admin-section">
+      <div class="section-header">
+        <h2>Messages</h2>
+      </div>
+      <div class="table-wrap compact-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Sender</th><th>Receiver</th><th>Filename</th><th>Status</th><th>Created</th><th>Delivered</th><th>Algorithms</th></tr>
+          </thead>
+          <tbody id="admin-messages-table"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel admin-section">
+      <div class="section-header">
+        <h2>Server Logs</h2>
+      </div>
+      <div class="table-wrap compact-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Level</th><th>Event Type</th><th>Message</th><th>Actor</th><th>IP</th><th>Created</th></tr>
+          </thead>
+          <tbody id="admin-logs-table"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel admin-section">
+      <div class="section-header">
+        <h2>RSA Keys</h2>
+      </div>
+      <div class="table-wrap compact-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Username</th><th>Key Version</th><th>Active</th><th>Created</th><th>Expires</th></tr>
+          </thead>
+          <tbody id="admin-keys-table"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel admin-section">
+      <div class="section-header">
+        <h2>Status</h2>
+      </div>
+      <ul id="admin-notifications" class="notification-list"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>

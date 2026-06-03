@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Cipher Frame encrypted chat dashboard. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cipher Frame chat dashboard.">
+  <title>Cipher Frame | Chat Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="app-body">
+  <header class="app-header panel">
+    <div>
+      <p class="eyebrow">Cipher Frame Dashboard</p>
+      <h1>Encrypted Image Messaging</h1>
+      <p class="lede">Logged in as <strong id="current-username">Loading...</strong></p>
+    </div>
+    <div class="header-actions">
+      <button id="admin-dashboard-button" class="secondary-action hidden" type="button">Sysadmin Dashboard</button>
+      <button id="refresh-inbox" class="secondary-action" type="button">Refresh Inbox</button>
+      <button id="logout-button" class="secondary-action danger" type="button">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard-grid">
+    <section class="panel sidebar">
+      <div class="panel-section">
+        <div class="section-header">
+          <h2>Online Users</h2>
+          <span class="status-pill" id="ws-status">Offline</span>
+        </div>
+        <ul id="online-users" class="user-list"></ul>
+      </div>
+
+      <div class="panel-section">
+        <div class="section-header">
+          <h2>Send Image</h2>
+        </div>
+        <form id="send-image-form" class="form-stack compact-form">
+          <label>
+            <span>Receiver</span>
+            <select id="receiver-select" required></select>
+          </label>
+          <label>
+            <span>Image File</span>
+            <input id="image-file" type="file" accept="image/*" required>
+          </label>
+          <p class="form-error" id="send-error" aria-live="polite"></p>
+          <button class="primary-action" type="submit">Send Image</button>
+        </form>
+      </div>
+
+      <div class="panel-section">
+        <h2>Notifications</h2>
+        <ul id="notification-list" class="notification-list"></ul>
+      </div>
+    </section>
+
+    <section class="panel content-area">
+      <div class="panel-section">
+        <div class="section-header">
+          <h2>Inbox</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Message ID</th><th>Sender</th><th>Timestamp</th><th>Status</th><th>Action</th></tr>
+            </thead>
+            <tbody id="inbox-table"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel-section">
+        <div class="section-header">
+          <h2>Sent</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Message ID</th><th>Receiver</th><th>Timestamp</th><th>Status</th><th>Action</th></tr>
+            </thead>
+            <tbody id="sent-table"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel-section viewer-grid">
+        <div class="viewer-card">
+          <div class="section-header">
+            <h2>Received Image</h2>
+            <span id="signature-badge" class="status-pill neutral">Signature Unknown</span>
+          </div>
+          <p class="viewer-meta" id="viewer-meta">Select a message to view it here.</p>
+          <img id="received-image" alt="Received encrypted message preview" class="message-image">
+        </div>
+        <div class="viewer-card">
+          <h2>Message Details</h2>
+          <pre id="message-details" class="detail-box">No message selected.</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/js/chat.js"></script>
+</body>
+</html>
