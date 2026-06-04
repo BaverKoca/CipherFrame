@@ -5,11 +5,11 @@ Cipher Frame is a university-level cybersecurity project for encrypted image mes
 This repository is intended as an educational and demonstrational secure-communication system. It should not be presented as production-grade cryptography without further hardening.
 
 ## 🖼️ Screenshots
-<img width="1920" height="869" alt="Image" src="https://github.com/user-attachments/assets/5286c31a-fda3-41d7-bda4-0e1399242b54" />
-<img width="1920" height="871" alt="Image" src="https://github.com/user-attachments/assets/c2de86c0-c9d1-426d-a860-88a4ba40211a" />
-<img width="1920" height="872" alt="Image" src="https://github.com/user-attachments/assets/dfb5c675-8072-43f5-9aa2-8972dea335a5" />
-<img width="1920" height="868" alt="Image" src="https://github.com/user-attachments/assets/e85a8b38-62f8-417c-b580-fee188ca5379" />
-<img width="1920" height="917" alt="Image" src="https://github.com/user-attachments/assets/aae567ac-5ee8-4be8-93ce-e17be592476e" />
+<img width="1896" height="869" alt="Image" src="https://github.com/user-attachments/assets/f7185f42-2a11-4273-9398-b057c8c17174" />
+<img width="1898" height="871" alt="Image" src="https://github.com/user-attachments/assets/c5f063b8-5455-4ed2-9e2f-d1c4e60317b8" />
+<img width="1898" height="872" alt="Image" src="https://github.com/user-attachments/assets/bd3f72a3-c0b7-46a9-ab89-08a289bf9bf1" />
+<img width="1894" height="868" alt="Image" src="https://github.com/user-attachments/assets/28a814f4-9a09-4fe1-a52d-4b7990c61cfb" />
+<img width="1892" height="917" alt="Image" src="https://github.com/user-attachments/assets/ea36cefa-c26c-4f13-99d9-4ee35321d82b" />
 
 ## Features
 
