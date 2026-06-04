@@ -4,6 +4,12 @@ Cipher Frame is a university-level cybersecurity project for encrypted image mes
 
 This repository is intended as an educational and demonstrational secure-communication system. It should not be presented as production-grade cryptography without further hardening.
 
+## 🖼️ Screenshots
+<img width="1920" height="871" alt="Image" src="https://github.com/user-attachments/assets/c2de86c0-c9d1-426d-a860-88a4ba40211a" />
+<img width="1920" height="872" alt="Image" src="https://github.com/user-attachments/assets/dfb5c675-8072-43f5-9aa2-8972dea335a5" />
+<img width="1920" height="868" alt="Image" src="https://github.com/user-attachments/assets/e85a8b38-62f8-417c-b580-fee188ca5379" />
+<img width="1920" height="917" alt="Image" src="https://github.com/user-attachments/assets/aae567ac-5ee8-4be8-93ce-e17be592476e" />
+
 ## Features
 
 - User registration and login with bcrypt password hashing
